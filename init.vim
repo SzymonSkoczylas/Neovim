@@ -7,6 +7,10 @@
 :set smarttab
 :set softtabstop=4
 
+"Pamietaj o zainstalowaniu:
+"exuberant-ctags
+"python3.6 i python3-pip
+"pip3 install pynvim
 call plug#begin()
 
 Plug 'https://github.com/github/copilot.vim' " Github Copilot
@@ -30,7 +34,7 @@ nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
-
+nmap <F3> :TerminalSplit bash<CR>
 nmap <F8> :TagbarToggle<CR>
 
 :set completeopt-=preview " For No Previews

@@ -7,10 +7,6 @@
 :set smarttab
 :set softtabstop=4
 
-"Pamietaj o zainstalowaniu:
-"exuberant-ctags
-"python3.6 i python3-pip
-"pip3 install pynvim
 call plug#begin()
 
 Plug 'xiyaowong/transparent.nvim' " Transparent

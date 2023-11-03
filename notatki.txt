@@ -7,5 +7,8 @@ echo 'set completion-ignore-case On' >> /etc/inputrc
 # you may have to use this instead if you are not a superuser:
 echo 'set completion-ignore-case On' | sudo tee -a /etc/inputrc
 
+#------------------------ZAINSTALUJ-------------------------------------
 #-----------------------------------------------------------------------
 #-----------------------------------------------------------------------
+apt-get install exuberant-ctags python3.6 python3-pip -y
+pip3 install pynvim -y

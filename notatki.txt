@@ -1,0 +1,11 @@
+#---DODAWANIE AUTOUZUPELNIANIA NAWET JAK LITERA JEST Z DUZEJ W UBUNTU---
+#-----------------------------------------------------------------------
+#-----------------------------------------------------------------------
+
+# add option to /etc/inputrc to enable case-insensitive tab completion for all users
+echo 'set completion-ignore-case On' >> /etc/inputrc
+# you may have to use this instead if you are not a superuser:
+echo 'set completion-ignore-case On' | sudo tee -a /etc/inputrc
+
+#-----------------------------------------------------------------------
+#-----------------------------------------------------------------------

@@ -11,4 +11,8 @@ echo 'set completion-ignore-case On' | sudo tee -a /etc/inputrc
 #-----------------------------------------------------------------------
 #-----------------------------------------------------------------------
 apt-get install exuberant-ctags python3.6 python3-pip -y
-pip3 install pynvim -y
+pip3 install pynvim
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source ~/.bashrc
+nvm install v21.1.0

@@ -40,12 +40,16 @@ packer.init({
 
 -- Install your plugins here
 return packer.startup(function(use)
+								
+ --							
+ -- Packages
+ --
 	use ("wbthomason/packer.nvim") -- Have packer manage itself	
-    use('xiyaowong/transparent.nvim') --Transparent
+ 	use('xiyaowong/transparent.nvim') --Transparent
 	use('https://github.com/github/copilot.vim') --Github Copilot
 	use('https://github.com/EdenEast/nightfox.nvim') --Nightfox Theme
 	use('http://github.com/tpope/vim-surround') --Surrounding ysw)
-	use('https://github.com/preservim/nerdtree') --NerdTree
+	use('https://github.com/nvim-tree/nvim-tree.lua') --File Explorer
 	use('https://github.com/tpope/vim-commentary') --For Commenting gcc & gc
 	use('https://github.com/vim-airline/vim-airline') --Status bar
 	use('https://github.com/ap/vim-css-color') --CSS Color Preview
@@ -54,7 +58,14 @@ return packer.startup(function(use)
 	use('https://github.com/tc50cal/vim-terminal') --Vim Terminal
 	use('https://github.com/preservim/tagbar') --Tagbar for code navigation
 	use('https://github.com/terryma/vim-multiple-cursors') --CTRL + N for multiple cursors
-    use("nvim-tree/nvim-web-devicons") -- Add entry here to install the plugin
+	use('https://github.com/Abstract-IDE/Abstract-cs') --Abstract Theme
+	use("nvim-tree/nvim-web-devicons") -- Add entry here to install the plugin
+use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
+use 'romgrk/barbar.nvim'
+use 'https://github.com/nvim-treesitter/nvim-treesitter'
+ --
+ --
+ --
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
